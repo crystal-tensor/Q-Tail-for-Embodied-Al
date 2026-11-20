@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from huggingface_hub import HfApi, hf_hub_download
 
 def main():
-    p=argparse.ArgumentParser(); p.add_argument('--root',default='/Volumes/ORICO/qtail_full_data_10w'); p.add_argument('--plan-only',action='store_true'); p.add_argument('--verify-only',action='store_true'); args=p.parse_args()
+    p=argparse.ArgumentParser(); p.add_argument('--root',default='/Volumes/ORICO/qtail_full_data_10w'); p.add_argument('--plan-only',action='store_true'); p.add_argument('--verify-only',action='store_true'); p.add_argument('--all-modalities',action='store_true'); args=p.parse_args()
     root=pathlib.Path(args.root); root.mkdir(parents=True,exist_ok=True)
     api=HfApi(); repo='LightwheelAI/EgoDemo'; manifest=root/'subset_manifest.json'
     if manifest.exists(): plan=json.loads(manifest.read_text())
@@ -20,7 +20,9 @@ def main():
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex: selected=list(ex.map(select,tasks))
         plan={'repo':repo,'revision':rev,'selection':'alphabetical first 10 task directories; first scene per task; complete LeRobot recording including both videos','target_task_scene_pairs':10,'selected':selected}
         manifest.write_text(json.dumps(plan,ensure_ascii=False,indent=2))
-    report={'checked_at':datetime.now(timezone.utc).isoformat(),'revision':plan['revision'],'requested_pairs':10,'downloaded_pairs':0,'verified_pairs':0,'status':'planned','total_planned_bytes':sum(f['bytes'] for s in plan['selected'] for f in s['files']),'files':[],'errors':[],'claim_boundary':'10 recordings, not 100,000 hours; no policy gain measured'}
+    selected_files=lambda scene: scene['files'] if args.all_modalities else [f for f in scene['files'] if '/observation.images.head_left/' in f['path']]
+    assert len(plan['selected'])==10 and all(selected_files(s) for s in plan['selected'])
+    report={'scope':'full_multimodal_recordings' if args.all_modalities else 'one_complete_left_video_per_task_scene','checked_at':datetime.now(timezone.utc).isoformat(),'revision':plan['revision'],'requested_pairs':10,'downloaded_pairs':0,'verified_pairs':0,'status':'planned','total_planned_bytes':sum(f['bytes'] for s in plan['selected'] for f in selected_files(s)),'files':[],'errors':[],'claim_boundary':'10 recordings, not 100,000 hours; no policy gain measured'}
     if not args.plan_only:
         try:
             if not args.verify_only: api.auth_check(repo_id=repo,repo_type='dataset')
@@ -29,7 +31,7 @@ def main():
             if shutil.disk_usage(root).free < report['total_planned_bytes']*1.1: raise RuntimeError('Insufficient disk space')
             for scene in plan['selected']:
                 ok=True; present=True
-                for f in scene['files']:
+                for f in selected_files(scene):
                     item={'path':f['path'],'expected_bytes':f['bytes']}
                     try:
                         path=(root/'EgoDemo'/f['path']) if args.verify_only else pathlib.Path(hf_hub_download(repo,f['path'],repo_type='dataset',revision=plan['revision'],local_dir=root/'EgoDemo'))
