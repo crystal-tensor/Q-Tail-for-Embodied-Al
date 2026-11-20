@@ -36,6 +36,8 @@ def verify_episode(root, manifest, index, item, download_records):
     tasks=pq.read_table(base/'meta/tasks.parquet').to_pylist()
     frames=state.num_rows;fps=float(info['fps'])
     assert frames==info['total_frames']==episode['length']==quality['total_frames'],'metadata_frame_count'
+    flagged=int(episode.get('quality/hand_bad_frame_count',0) or 0)
+    assert flagged==len(quality.get('hand_bad_frame_details',[])),'quality_flag_count'
     assert episode['episode_uuid']==item['source_episode_uuid'] and episode['scene_id']==item['scene_id'],'source_identity'
     assert len(tasks)==1 and tasks[0]['task']==item['task'] and item['task'] in episode['tasks'],'task_identity'
     timestamps=np.asarray(state['timestamp'].to_pylist(),dtype=float)
@@ -70,7 +72,7 @@ def verify_episode(root, manifest, index, item, download_records):
         counts=[int(line.split('=',1)[1]) for line in run.stdout.splitlines() if line.startswith('frame=')]
         assert counts and counts[-1]==frames,'decoded_frame_count'
         media.append({'stream':stream,'frames_fully_decoded':counts[-1],'fps':fps,'width':st['width'],'height':st['height'],'decoder':decoder,'video_state_timestamp_max_error_s':float(np.max(np.abs(times-timestamps)))})
-    return {'task_index':index,'task':item['task'],'scene_id':item['scene_id'],'episode_uuid':item['source_episode_uuid'],'passed':True,'state_frames':frames,'duration_s':frames/fps,'files':files,'videos':media,'json_files_parsed':4,'parquet_files_read':3,'annotation_segments':len(annotation.get('subtask_annotations',[]))}
+    return {'task_index':index,'task':item['task'],'scene_id':item['scene_id'],'episode_uuid':item['source_episode_uuid'],'passed':True,'state_frames':frames,'duration_s':frames/fps,'official_hand_bad_frame_count':flagged,'files':files,'videos':media,'json_files_parsed':4,'parquet_files_read':3,'annotation_segments':len(annotation.get('subtask_annotations',[]))}
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--root',type=pathlib.Path,required=True);p.add_argument('--watch',action='store_true');a=p.parse_args();root=a.root
@@ -87,7 +89,11 @@ def main():
                 prior=cache/f'{i:02d}.json'
                 if prior.exists():
                     old=json.loads(prior.read_text())
-                    if old.get('passed') and all(records.get(f['path'],{}).get('sha256')==f['sha256'] for f in old['files']):complete[i]=old;continue
+                    if old.get('passed') and all(records.get(f['path'],{}).get('sha256')==f['sha256'] for f in old['files']):
+                        if 'official_hand_bad_frame_count' not in old:
+                            base=root/'EgoDemo'/pathlib.Path(item['files'][0]['path']).parent
+                            old['official_hand_bad_frame_count']=int(pq.read_table(base/'meta/episodes/chunk-000/file-000.parquet',columns=['quality/hand_bad_frame_count']).to_pylist()[0]['quality/hand_bad_frame_count'] or 0)
+                        complete[i]=old;continue
                 inflight[i]=pool.submit(verify_episode,root,manifest,i,item,records)
             for i,future in list(inflight.items()):
                 if future.done():
