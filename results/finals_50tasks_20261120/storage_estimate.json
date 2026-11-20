@@ -1,0 +1,41 @@
+{
+  "disk_free_bytes_at_start": 1156894642176,
+  "sampling": "50 alphabetically selected tasks, one episode each, nonrandom; intervals capture only sample variation, not full-corpus selection bias",
+  "estimate": {
+    "single_left_video": {
+      "sample_bytes": 5424765049,
+      "sample_seconds": 5390.231111111111,
+      "GB_per_hour": 3.623064349902127,
+      "extrapolated_100k_hours_TB": 362.3064349902127,
+      "task_bootstrap95_TB": [
+        338.48854864814365,
+        389.55692240475423
+      ],
+      "with_20_percent_extra_TB": 434.7677219882553
+    },
+    "state_parquet": {
+      "sample_bytes": 270112215,
+      "sample_seconds": 5390.231111111111,
+      "GB_per_hour": 0.18040116535922598,
+      "extrapolated_100k_hours_TB": 18.040116535922596,
+      "task_bootstrap95_TB": [
+        17.299285739999874,
+        19.248564244562267
+      ],
+      "with_20_percent_extra_TB": 21.648139843107117
+    },
+    "full_lerobot_multimodal": {
+      "sample_bytes": 11294717712,
+      "sample_seconds": 5390.231111111111,
+      "GB_per_hour": 7.543458327674262,
+      "extrapolated_100k_hours_TB": 754.3458327674263,
+      "task_bootstrap95_TB": [
+        705.370618643086,
+        809.576071510301
+      ],
+      "with_20_percent_extra_TB": 905.2149993209115
+    }
+  },
+  "recommended_primary_usable_storage": "about 1 PB for one complete LeRobot representation with workspace allowance; redundancy and independent backup require extra physical capacity",
+  "all_repo_formats_caveat": "1.48TB / 50h extrapolation gives 2.96PB but includes alternative MCAP/LeRobot representations and raw variants; not unique-hour storage; provider full-corpus byte inventory unavailable"
+}

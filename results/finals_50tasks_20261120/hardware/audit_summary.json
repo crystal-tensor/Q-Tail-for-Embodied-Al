@@ -1,0 +1,108 @@
+{
+  "verified_runs": 3,
+  "total_shots": 6144,
+  "browser_tasks_rechecked_finished": true,
+  "rows": [
+    {
+      "repeat_index": 0,
+      "task_id": "2611201314459691297",
+      "chip": "Baihua",
+      "shots": 2048,
+      "status": "Finished",
+      "submitted_at_utc": "2026-11-20T05:14:45.725477+00:00",
+      "execution_created_platform": "2026-11-20 14:15:08.806523",
+      "execution_finished_platform": "2026-11-20 14:15:13.301514",
+      "qasm_sha256": "e361370778698bf4a22f5d0f639452d5767ac4de8122dd2d9b6ef4341d052ba0",
+      "compiled_qasm_sha256": "41527884a60facd24cec74c000e52da55bc46a4a3cf02aa32246b919fd86a8e0",
+      "logical": {
+        "dependency_depth_including_measurement": 22,
+        "active_qubits": 5,
+        "gate_counts": {
+          "h": 5,
+          "ry": 30,
+          "cx": 24,
+          "measure": 5
+        }
+      },
+      "compiled": {
+        "dependency_depth_including_measurement": 30,
+        "active_qubits": 5,
+        "gate_counts": {
+          "u": 49,
+          "cz": 24,
+          "barrier": 0,
+          "measure": 5
+        }
+      },
+      "observed_outcomes": 32
+    },
+    {
+      "repeat_index": 1,
+      "task_id": "2611201318089732111",
+      "chip": "Baihua",
+      "shots": 2048,
+      "status": "Finished",
+      "submitted_at_utc": "2026-11-20T05:18:08.697986+00:00",
+      "execution_created_platform": "2026-11-20 14:15:13.201331",
+      "execution_finished_platform": "2026-11-20 14:15:17.798304",
+      "qasm_sha256": "e361370778698bf4a22f5d0f639452d5767ac4de8122dd2d9b6ef4341d052ba0",
+      "compiled_qasm_sha256": "41527884a60facd24cec74c000e52da55bc46a4a3cf02aa32246b919fd86a8e0",
+      "logical": {
+        "dependency_depth_including_measurement": 22,
+        "active_qubits": 5,
+        "gate_counts": {
+          "h": 5,
+          "ry": 30,
+          "cx": 24,
+          "measure": 5
+        }
+      },
+      "compiled": {
+        "dependency_depth_including_measurement": 30,
+        "active_qubits": 5,
+        "gate_counts": {
+          "u": 49,
+          "cz": 24,
+          "barrier": 0,
+          "measure": 5
+        }
+      },
+      "observed_outcomes": 32
+    },
+    {
+      "repeat_index": 2,
+      "task_id": "2611201318096790351",
+      "chip": "Baihua",
+      "shots": 2048,
+      "status": "Finished",
+      "submitted_at_utc": "2026-11-20T05:18:09.029350+00:00",
+      "execution_created_platform": "2026-11-20 14:15:17.610149",
+      "execution_finished_platform": "2026-11-20 14:15:22.289007",
+      "qasm_sha256": "e361370778698bf4a22f5d0f639452d5767ac4de8122dd2d9b6ef4341d052ba0",
+      "compiled_qasm_sha256": "41527884a60facd24cec74c000e52da55bc46a4a3cf02aa32246b919fd86a8e0",
+      "logical": {
+        "dependency_depth_including_measurement": 22,
+        "active_qubits": 5,
+        "gate_counts": {
+          "h": 5,
+          "ry": 30,
+          "cx": 24,
+          "measure": 5
+        }
+      },
+      "compiled": {
+        "dependency_depth_including_measurement": 30,
+        "active_qubits": 5,
+        "gate_counts": {
+          "u": 49,
+          "cz": 24,
+          "barrier": 0,
+          "measure": 5
+        }
+      },
+      "observed_outcomes": 32
+    }
+  ],
+  "depth_boundary": "gate dependency layers of exported QASM including measurement, not pulse duration",
+  "source": "run_random_circuit.py seed7 circuit; no other chip submitted"
+}

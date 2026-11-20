@@ -1,0 +1,402 @@
+[
+  {
+    "task_index": 0,
+    "task": "Adjust Seal Sticker",
+    "frames": 951,
+    "train_windows": 563,
+    "train_cv_mpjpe_m": 0.009268850088119507,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 1,
+    "task": "Adjust Shelf Labels",
+    "frames": 404,
+    "train_windows": 235,
+    "train_cv_mpjpe_m": 0.020014749839901924,
+    "guard_frames": 20
+  },
+  {
+    "task_index": 2,
+    "task": "Affix Drawer Label",
+    "frames": 1486,
+    "train_windows": 884,
+    "train_cv_mpjpe_m": 0.009473939426243305,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 3,
+    "task": "Affix Label to Courier Parcel",
+    "frames": 2517,
+    "train_windows": 1503,
+    "train_cv_mpjpe_m": 0.017650984227657318,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 4,
+    "task": "Affix Shipping Label (on Package Surface)",
+    "frames": 575,
+    "train_windows": 338,
+    "train_cv_mpjpe_m": 0.016076557338237762,
+    "guard_frames": 28
+  },
+  {
+    "task_index": 5,
+    "task": "Affix Shipping Label to Package",
+    "frames": 1462,
+    "train_windows": 870,
+    "train_cv_mpjpe_m": 0.026465294882655144,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 6,
+    "task": "Align Drinking Cups",
+    "frames": 765,
+    "train_windows": 452,
+    "train_cv_mpjpe_m": 0.01684771664440632,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 7,
+    "task": "Align Mixed Merchandise to Shelf Front Edge",
+    "frames": 239,
+    "train_windows": 136,
+    "train_cv_mpjpe_m": 0.013580771163105965,
+    "guard_frames": 11
+  },
+  {
+    "task_index": 8,
+    "task": "Align Snack Bags to Shelf Front Edge",
+    "frames": 249,
+    "train_windows": 142,
+    "train_cv_mpjpe_m": 0.01457369513809681,
+    "guard_frames": 12
+  },
+  {
+    "task_index": 9,
+    "task": "Align Wet Wipe Stacks",
+    "frames": 406,
+    "train_windows": 236,
+    "train_cv_mpjpe_m": 0.01901155523955822,
+    "guard_frames": 20
+  },
+  {
+    "task_index": 10,
+    "task": "Align and Arrange Folders",
+    "frames": 2452,
+    "train_windows": 1464,
+    "train_cv_mpjpe_m": 0.017172986641526222,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 11,
+    "task": "Align and Place Sunglasses on Display",
+    "frames": 156,
+    "train_windows": 86,
+    "train_cv_mpjpe_m": 0.02891124226152897,
+    "guard_frames": 7
+  },
+  {
+    "task_index": 12,
+    "task": "Align and Stack Takeaway Cup Lids",
+    "frames": 666,
+    "train_windows": 392,
+    "train_cv_mpjpe_m": 0.019133713096380234,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 13,
+    "task": "Align and restock condiments on shelves",
+    "frames": 339,
+    "train_windows": 196,
+    "train_cv_mpjpe_m": 0.033226028084754944,
+    "guard_frames": 16
+  },
+  {
+    "task_index": 14,
+    "task": "Aloo Sev Bag Alignment",
+    "frames": 435,
+    "train_windows": 254,
+    "train_cv_mpjpe_m": 0.05369371548295021,
+    "guard_frames": 21
+  },
+  {
+    "task_index": 15,
+    "task": "Apply Sealing Label",
+    "frames": 667,
+    "train_windows": 393,
+    "train_cv_mpjpe_m": 0.013013194315135479,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 16,
+    "task": "Apply sealing tape to bag opening",
+    "frames": 4325,
+    "train_windows": 2588,
+    "train_cv_mpjpe_m": 0.020503051578998566,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 17,
+    "task": "Arrange Toiletries",
+    "frames": 3546,
+    "train_windows": 2120,
+    "train_cv_mpjpe_m": 0.01933656632900238,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 18,
+    "task": "Arrange basketball referee whistles",
+    "frames": 2746,
+    "train_windows": 1640,
+    "train_cv_mpjpe_m": 0.021578598767518997,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 19,
+    "task": "Assemble Center-Hole Cap",
+    "frames": 12413,
+    "train_windows": 7440,
+    "train_cv_mpjpe_m": 0.008490186184644699,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 20,
+    "task": "Assemble Ear Seal",
+    "frames": 14290,
+    "train_windows": 8567,
+    "train_cv_mpjpe_m": 0.015145189128816128,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 21,
+    "task": "Assemble Photo Album",
+    "frames": 435,
+    "train_windows": 254,
+    "train_cv_mpjpe_m": 0.007916530594229698,
+    "guard_frames": 21
+  },
+  {
+    "task_index": 22,
+    "task": "Assemble Shipping Cardboard Box",
+    "frames": 15520,
+    "train_windows": 9305,
+    "train_cv_mpjpe_m": 0.024117525666952133,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 23,
+    "task": "Attach Takeaway Cup Label",
+    "frames": 1771,
+    "train_windows": 1055,
+    "train_cv_mpjpe_m": 0.013712028041481972,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 24,
+    "task": "Bagging Name Badges",
+    "frames": 5194,
+    "train_windows": 3109,
+    "train_cv_mpjpe_m": 0.020427078008651733,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 25,
+    "task": "Bagging Paper Clips",
+    "frames": 933,
+    "train_windows": 552,
+    "train_cv_mpjpe_m": 0.01316719502210617,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 26,
+    "task": "Basketball Inflation Task",
+    "frames": 17069,
+    "train_windows": 10234,
+    "train_cv_mpjpe_m": 0.023868991062045097,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 27,
+    "task": "Beer Sorting and Organization",
+    "frames": 2301,
+    "train_windows": 1373,
+    "train_cv_mpjpe_m": 0.027714861556887627,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 28,
+    "task": "Beverage Packaging Damage Inspection",
+    "frames": 2015,
+    "train_windows": 1202,
+    "train_cv_mpjpe_m": 0.02672075293958187,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 29,
+    "task": "Beverage Sorting and Neat Arrangement",
+    "frames": 679,
+    "train_windows": 400,
+    "train_cv_mpjpe_m": 0.017367277294397354,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 30,
+    "task": "Bottle Opener and Peeler Placement",
+    "frames": 221,
+    "train_windows": 125,
+    "train_cv_mpjpe_m": 0.0473850816488266,
+    "guard_frames": 11
+  },
+  {
+    "task_index": 31,
+    "task": "Cap Whiteboard Markers",
+    "frames": 1586,
+    "train_windows": 944,
+    "train_cv_mpjpe_m": 0.011589775793254375,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 32,
+    "task": "Clamp Papers with Binder Clip",
+    "frames": 757,
+    "train_windows": 447,
+    "train_cv_mpjpe_m": 0.022305484861135483,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 33,
+    "task": "Clean Coffee Cup Tray",
+    "frames": 985,
+    "train_windows": 584,
+    "train_cv_mpjpe_m": 0.015240497887134552,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 34,
+    "task": "Clean Desk Trash (Desktop Trash Bin)",
+    "frames": 4447,
+    "train_windows": 2661,
+    "train_cv_mpjpe_m": 0.02299772948026657,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 35,
+    "task": "Clean Desk Waste",
+    "frames": 1185,
+    "train_windows": 704,
+    "train_cv_mpjpe_m": 0.019100725650787354,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 36,
+    "task": "Clean Scissors",
+    "frames": 11800,
+    "train_windows": 7073,
+    "train_cv_mpjpe_m": 0.016587894409894943,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 37,
+    "task": "Clean and Wipe Desktop",
+    "frames": 3516,
+    "train_windows": 2102,
+    "train_cv_mpjpe_m": 0.024363704025745392,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 38,
+    "task": "Clean the tissue box and replace the tissue pack",
+    "frames": 3205,
+    "train_windows": 1916,
+    "train_cv_mpjpe_m": 0.01971186324954033,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 39,
+    "task": "Cleaning Product Damage Inspection",
+    "frames": 2483,
+    "train_windows": 1482,
+    "train_cv_mpjpe_m": 0.019615693017840385,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 40,
+    "task": "Cleaning Product Restocking",
+    "frames": 383,
+    "train_windows": 222,
+    "train_cv_mpjpe_m": 0.02772185578942299,
+    "guard_frames": 19
+  },
+  {
+    "task_index": 41,
+    "task": "Clothesline Garment Organization",
+    "frames": 2084,
+    "train_windows": 1243,
+    "train_cv_mpjpe_m": 0.030565347522497177,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 42,
+    "task": "Coiling and Securing (Loose Cables)",
+    "frames": 1278,
+    "train_windows": 759,
+    "train_cv_mpjpe_m": 0.01555760856717825,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 43,
+    "task": "Color-Sorted Hanging of Resistance Bands",
+    "frames": 4288,
+    "train_windows": 2565,
+    "train_cv_mpjpe_m": 0.02376818284392357,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 44,
+    "task": "Conference Candy Arrangement",
+    "frames": 395,
+    "train_windows": 230,
+    "train_cv_mpjpe_m": 0.01775195077061653,
+    "guard_frames": 19
+  },
+  {
+    "task_index": 45,
+    "task": "Courier Box Folding, Forming, and Bottom Sealing",
+    "frames": 1802,
+    "train_windows": 1074,
+    "train_cv_mpjpe_m": 0.017698481678962708,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 46,
+    "task": "Data Cable Coiling, Organizing, and Bundling",
+    "frames": 8475,
+    "train_windows": 5078,
+    "train_cv_mpjpe_m": 0.01486208476126194,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 47,
+    "task": "Directional Organization and Initial Inspection of PCB Cable Harnesses",
+    "frames": 14310,
+    "train_windows": 8579,
+    "train_cv_mpjpe_m": 0.029436375945806503,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 48,
+    "task": "Disinfect Door Handle",
+    "frames": 1046,
+    "train_windows": 620,
+    "train_cv_mpjpe_m": 0.016769470646977425,
+    "guard_frames": 30
+  },
+  {
+    "task_index": 49,
+    "task": "Drawer Filing",
+    "frames": 440,
+    "train_windows": 257,
+    "train_cv_mpjpe_m": 0.0357748419046402,
+    "guard_frames": 22
+  }
+]

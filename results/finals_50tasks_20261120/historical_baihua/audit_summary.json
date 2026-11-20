@@ -1,0 +1,270 @@
+{
+  "verified_runs": 6,
+  "historical_dates": [
+    "2026-04-19",
+    "2026-04-21"
+  ],
+  "pooled_task_ids": [
+    "2604191311391358859",
+    "2604191544020368432",
+    "2604191619343003590"
+  ],
+  "pooled_shots": 297984,
+  "pooled_observed_outcomes": 32598,
+  "rows": [
+    {
+      "task_id": "2604191207294416440",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 1024,
+      "observed_outcomes": 998,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "7b22ff6679d056cd8b65659287748b5a399160e6cd517e6001309e5f1b167207",
+      "created_platform": "2026-04-19 12:07:30.982660",
+      "finished_platform": "2026-04-19 12:07:33.407456",
+      "submitTime": "2026-04-19-12-07-29",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 259,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rx": 139,
+          "ry": 127,
+          "rz": 146,
+          "cx": 559,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    },
+    {
+      "task_id": "2604191311391358859",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 99328,
+      "observed_outcomes": 27075,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "5b014cab85bc1452733d9223226e319840634697fd7b5b414dfd26b9c517a451",
+      "created_platform": "2026-04-19 13:11:41.471435",
+      "finished_platform": "2026-04-19 13:12:47.220634",
+      "submitTime": "2026-04-19-13-11-39",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 169,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "ry": 127,
+          "rx": 139,
+          "rz": 146,
+          "cx": 520,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    },
+    {
+      "task_id": "2604191544020368432",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 99328,
+      "observed_outcomes": 29109,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "19b749d8d47ea0c63e4b79ff10cab4c4722d39697b24e04bc3dfe29579c4d394",
+      "created_platform": "2026-04-19 15:44:04.226208",
+      "finished_platform": "2026-04-19 15:45:20.203584",
+      "submitTime": "2026-04-19-15-44-02",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 213,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 146,
+          "rx": 139,
+          "ry": 127,
+          "cx": 469,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    },
+    {
+      "task_id": "2604191619343003590",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 99328,
+      "observed_outcomes": 28274,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "c08b021bb0465f631a3d66c83ff6cf8c4f380b6ae9b5274be2a996e688fddd32",
+      "created_platform": "2026-04-19 16:19:36.433419",
+      "finished_platform": "2026-04-19 16:20:47.826311",
+      "submitTime": "2026-04-19-16-19-34",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 214,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rx": 139,
+          "rz": 146,
+          "ry": 127,
+          "cx": 439,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    },
+    {
+      "task_id": "2604211606486084561",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 9216,
+      "observed_outcomes": 7674,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "97181820ad03956cd7e14284cdeed52f60435cbaf47f9b4f1250518d880d1368",
+      "created_platform": "2026-04-21 16:06:50.088219",
+      "finished_platform": "2026-04-21 16:06:57.108282",
+      "submitTime": "2026-04-21-16-06-48",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 216,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rx": 139,
+          "ry": 127,
+          "rz": 146,
+          "cx": 439,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    },
+    {
+      "task_id": "2604211610351250241",
+      "chip": "Baihua",
+      "status": "Finished",
+      "shots": 9216,
+      "observed_outcomes": 7694,
+      "logical_qubits": 15,
+      "logical_cx_gates": 196,
+      "logical_rotation_gates": 420,
+      "qasm_sha256": "a3fe7066e81e07b1c0b99b1dda2e08f46d32ba5fb0dae8837bf1de2390c2f9c0",
+      "compiled_qasm_sha256": "97181820ad03956cd7e14284cdeed52f60435cbaf47f9b4f1250518d880d1368",
+      "created_platform": "2026-04-21 16:10:36.677078",
+      "finished_platform": "2026-04-21 16:10:44.162323",
+      "submitTime": "2026-04-21-16-10-35",
+      "source": "platform API re-retrieved 2026-11-20; historical run, not a new execution",
+      "logical_layers": {
+        "dependency_depth_including_measurement": 58,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rz": 150,
+          "ry": 129,
+          "rx": 141,
+          "cx": 196,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      },
+      "compiled_layers": {
+        "dependency_depth_including_measurement": 216,
+        "active_physical_qubits": 15,
+        "gate_counts": {
+          "h": 15,
+          "rx": 139,
+          "ry": 127,
+          "rz": 146,
+          "cx": 439,
+          "measure": 15
+        },
+        "depth_boundary": "QASM gate-dependency layers, not pulse schedule duration"
+      }
+    }
+  ],
+  "bit_order_boundary": "probability masses rank matched only; no bit-string XEB claimed",
+  "claim_boundary": "historical hardware distribution used in a new offline hand-pose pilot; no new robot hardware execution or quantum advantage claim"
+}

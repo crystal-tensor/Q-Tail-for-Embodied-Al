@@ -1,0 +1,79 @@
+{
+  "version": "20261120-v3-before-model-fitting: historical hardware retrieval completed; all comparison arms specified before training",
+  "dataset": "EgoDemo/EgoStand",
+  "selection": "50 alphabetically sorted task labels, first source UUID each",
+  "episodes_per_task": 1,
+  "split": {
+    "train": [
+      0,
+      0.6
+    ],
+    "validation": [
+      0.6,
+      0.75
+    ],
+    "test": [
+      0.75,
+      1
+    ],
+    "guard_frames": "min(30, max(2, floor(0.05*episode_frames)))",
+    "history_frames": 3,
+    "forecast_horizon_frames": 5
+  },
+  "model": "task-conditioned residual MLP, same architecture for all learned arms",
+  "arms": [
+    "original_only",
+    "natural_aug",
+    "uniform_aug",
+    "classical_risk_aug",
+    "ideal_rcs_aug",
+    "ideal_archive_aug",
+    "baihua_archive_aug",
+    "baihua_rcs_aug"
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "optimizer_steps": 1200,
+  "batch_size": 256,
+  "synthetic_fraction_aug_arms": 0.5,
+  "eta": 0.6,
+  "augmentations": "shared rigid yaw ±10 degrees and translation ±1cm; common PT-OT quantile map H(z)=0.9 Beta(2,5)+0.1 Beta(5,2), inverse empirical Exp(1) ranks, maps z to 1–30mm per-hand Gaussian observation-noise scale shared across its21 joints; future targets clean transformed; no hardware claim for common noise synthesis",
+  "main_metrics": [
+    "mean 42-joint position error in cm",
+    "95th-percentile frame position error",
+    "mean of worst 20% task errors",
+    "fraction of forecast frames within 5cm"
+  ],
+  "test_conditions": [
+    "clean",
+    "per-hand observation noise 3mm",
+    "per-hand observation noise 10mm"
+  ],
+  "strong_nonlearned_baselines": [
+    "last_pose",
+    "constant_velocity"
+  ],
+  "tail_definition": "10 tasks with fewest usable training windows, selected before fitting",
+  "risk_proxy": "training-only constant-velocity residual and rarity; not actual failure or pain labels",
+  "hardware": "Baihua only; reference seed7 five-qubit six-cycle RCS, three 2048-shot repeats",
+  "claim_boundary": "Within-episode future hand-pose prediction pilot; no held-out episodes or robot success-rate claims; synthetic observation windows, not generated videos or executed robot rollouts",
+  "training_bank_rows": 60000,
+  "uniform_aug": "uniform task probability; natural_aug keeps original frame-frequency probability, separating augmentation from reallocation",
+  "augmentation_method_boundary": "inverse-CDF target-mixture synthesis inspired by PT-OT; quantum masses affect task allocation only; no physical simulator",
+  "historical_hardware_extension": {
+    "chip": "Baihua",
+    "tasks": [
+      "2604191311391358859",
+      "2604191544020368432",
+      "2604191619343003590"
+    ],
+    "each_shots": 99328,
+    "circuit": "same 15-qubit historical QASM verified by SHA256",
+    "prior": "pooled 297984 shots; positive probability masses rank matched per existing Q-TAIL implementation",
+    "classical_reference": "same QASM exact statevector; multinomial shot-matched 297984 shots, seed20261120",
+    "new_5qubit_jobs": "separate optional arm only after actual Finished counts; not substituted by archive"
+  }
+}

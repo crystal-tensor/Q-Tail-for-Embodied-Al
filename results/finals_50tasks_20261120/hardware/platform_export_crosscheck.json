@@ -1,0 +1,30 @@
+{
+  "csv_exports": [
+    {
+      "task_id": "2611201314459691297",
+      "csv_rows": 32,
+      "csv_sha256": "7304d7f8a44e5d0df24c4a3684cb2f72aac4ac9327f9cba30cb71c091b9692bf",
+      "max_probability_delta_percentage_points": 8.106231774718253e-08,
+      "reconstructed_integer_counts_exact_match": true,
+      "shots": 2048
+    },
+    {
+      "task_id": "2611201318089732111",
+      "csv_rows": 32,
+      "csv_sha256": "65a6078718cc471756764e81ffa16e205c8a49bc8cf05b05e58028dd2f6aaa37",
+      "max_probability_delta_percentage_points": 7.820129610536242e-08,
+      "reconstructed_integer_counts_exact_match": true,
+      "shots": 2048
+    },
+    {
+      "task_id": "2611201318096790351",
+      "csv_rows": 32,
+      "csv_sha256": "988441dd220be7fad5d810c725cf23b9708a616f59312b1efc8aa88eab1796a0",
+      "max_probability_delta_percentage_points": 8.487701563808514e-08,
+      "reconstructed_integer_counts_exact_match": true,
+      "shots": 2048
+    }
+  ],
+  "screenshots_supplied_by_user": 4,
+  "conclusion": "All 96 probability entries reconstruct API integer counts exactly; percent floating precision difference <1e-6 percentage points; no training rerun required"
+}

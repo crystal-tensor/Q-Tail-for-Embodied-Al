@@ -1,0 +1,11 @@
+{
+  "task_id": "2611201432184387939",
+  "rows": 4096,
+  "bitstring_length": 54,
+  "all_counts_match_api": true,
+  "shots": 4096,
+  "csv_sha256": "9df0c9be4993c2333e4156eccb17b0f7cf1c61fba29ea3cad70c2507ba72632b",
+  "all_observed_states_singletons": true,
+  "browser_task_detail_rechecked": true,
+  "interpretation": "effective hardware scale validation; equal displayed empirical probabilities arise from one count per distinct observed state, not proof of uniform true probabilities"
+}
