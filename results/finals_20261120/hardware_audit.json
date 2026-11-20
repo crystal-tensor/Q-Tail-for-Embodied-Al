@@ -1,0 +1,98 @@
+[
+  {
+    "family": "qaoa",
+    "task_id": "2607301830017087376",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-30T10:30:01.342692+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": 0.322265625,
+    "shot_wilson95": [
+      0.30237416172704273,
+      0.3428225970817877
+    ],
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  },
+  {
+    "family": "qaoa",
+    "task_id": "2607311433046444920",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-31T06:33:04.394730+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": 0.275390625,
+    "shot_wilson95": [
+      0.2564778607726358,
+      0.29514441684291914
+    ],
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  },
+  {
+    "family": "cvar_qubo",
+    "task_id": "2607311058539535431",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-31T02:57:59.971158+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": 0.25,
+    "shot_wilson95": [
+      0.23172620700836483,
+      0.26920989329416595
+    ],
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  },
+  {
+    "family": "cvar_qubo",
+    "task_id": "2607311433572872999",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-31T06:33:55.190445+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": 0.2294921875,
+    "shot_wilson95": [
+      0.21179672759204168,
+      0.24820053718843096
+    ],
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  },
+  {
+    "family": "pqc_born",
+    "task_id": "2607311122486990093",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-31T03:22:46.419579+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": null,
+    "shot_wilson95": null,
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  },
+  {
+    "family": "pqc_born",
+    "task_id": "2607311434167413250",
+    "backend": "Dongling",
+    "submitted_at": "2026-07-31T06:34:14.605318+00:00",
+    "shots": 2048,
+    "qubits": 8,
+    "counts_match_shots": true,
+    "circuit_hash_match": true,
+    "raw_feasible_rate": null,
+    "shot_wilson95": null,
+    "evidence": "archived local platform receipt; no new submission or live platform re-query",
+    "post_semifinal": false
+  }
+]

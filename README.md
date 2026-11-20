@@ -1,3 +1,7 @@
+# November 2026 finals update
+
+See [the evidence and claim boundaries](docs/finals_20261120.md), [six archived QUAFU runs](results/finals_20261120/hardware_audit.json), and [EgoSuite access status](results/finals_20261120/verification_report.json). Ten task/scene recordings are planned; zero complete recordings are downloaded. Browser access is now granted; two JSON metadata files passed size and parse checks, while bulk browser transport remains interrupted. Pain-memory and VLA/WAM integration benefits remain unmeasured.
+
 # Q-Tail-for-AI
 
 **Quantum-enhanced synthetic training-data allocation for long-tail embodied intelligence**

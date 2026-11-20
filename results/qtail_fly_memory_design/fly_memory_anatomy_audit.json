@@ -1,0 +1,231 @@
+{
+  "format_version": "qtail_fly_memory_anatomy_audit_v1",
+  "generated_at": "2026-10-10T06:38:06.398781+00:00",
+  "dataset": "MaleCNS v1.0",
+  "evidence_level": "annotation_and_type_aggregated_anatomy_only",
+  "annotation_rows_all_segments": 211577,
+  "superclass_annotated_neurons": 166700,
+  "cell_counts": {
+    "Kenyon_cells": {
+      "neurons": 4064,
+      "annotated_types": [
+        "KC",
+        "KCa'b'-ap1",
+        "KCa'b'-ap2",
+        "KCa'b'-m",
+        "KCab-c",
+        "KCab-m",
+        "KCab-p",
+        "KCab-s",
+        "KCg",
+        "KCg-d",
+        "KCg-m",
+        "KCg-s1",
+        "KCg-s2",
+        "KCg-s3",
+        "KCg-s4"
+      ]
+    },
+    "MBON": {
+      "neurons": 97,
+      "annotated_types": [
+        "MBON01",
+        "MBON02",
+        "MBON03",
+        "MBON04",
+        "MBON05",
+        "MBON06",
+        "MBON07",
+        "MBON09",
+        "MBON10",
+        "MBON11",
+        "MBON12",
+        "MBON13",
+        "MBON14",
+        "MBON15",
+        "MBON15-like",
+        "MBON16",
+        "MBON17",
+        "MBON17-like",
+        "MBON18",
+        "MBON19",
+        "MBON20",
+        "MBON21",
+        "MBON22",
+        "MBON23",
+        "MBON24",
+        "MBON25",
+        "MBON25-like",
+        "MBON26",
+        "MBON27",
+        "MBON28",
+        "MBON29",
+        "MBON30",
+        "MBON31",
+        "MBON32",
+        "MBON33",
+        "MBON34",
+        "MBON35"
+      ]
+    },
+    "DAN_all": {
+      "neurons": 340,
+      "annotated_types": [
+        "PAM01",
+        "PAM02",
+        "PAM03",
+        "PAM04",
+        "PAM05",
+        "PAM06",
+        "PAM07",
+        "PAM08",
+        "PAM09",
+        "PAM10",
+        "PAM11",
+        "PAM12",
+        "PAM13",
+        "PAM14",
+        "PAM15",
+        "PPL101",
+        "PPL102",
+        "PPL103",
+        "PPL104",
+        "PPL105",
+        "PPL106",
+        "PPL107",
+        "PPL108",
+        "PPL201",
+        "PPL202",
+        "PPL203",
+        "PPL204"
+      ]
+    },
+    "PPL1_candidates": {
+      "neurons": 16,
+      "annotated_types": [
+        "PPL101",
+        "PPL102",
+        "PPL103",
+        "PPL104",
+        "PPL105",
+        "PPL106",
+        "PPL107",
+        "PPL108"
+      ]
+    },
+    "PAM_candidates": {
+      "neurons": 316,
+      "annotated_types": [
+        "PAM01",
+        "PAM02",
+        "PAM03",
+        "PAM04",
+        "PAM05",
+        "PAM06",
+        "PAM07",
+        "PAM08",
+        "PAM09",
+        "PAM10",
+        "PAM11",
+        "PAM12",
+        "PAM13",
+        "PAM14",
+        "PAM15"
+      ]
+    },
+    "APL": {
+      "neurons": 2,
+      "annotated_types": [
+        "APL"
+      ]
+    }
+  },
+  "pathways": [
+    {
+      "pre_role": "KC",
+      "post_role": "MBON",
+      "positive_type_group_edges": 254,
+      "male_synapse_count": 463221,
+      "present": true
+    },
+    {
+      "pre_role": "PPL1",
+      "post_role": "KC",
+      "positive_type_group_edges": 51,
+      "male_synapse_count": 49216,
+      "present": true
+    },
+    {
+      "pre_role": "PPL1",
+      "post_role": "MBON",
+      "positive_type_group_edges": 132,
+      "male_synapse_count": 11041,
+      "present": true
+    },
+    {
+      "pre_role": "MBON",
+      "post_role": "PPL1",
+      "positive_type_group_edges": 133,
+      "male_synapse_count": 4353,
+      "present": true
+    },
+    {
+      "pre_role": "PAM",
+      "post_role": "KC",
+      "positive_type_group_edges": 112,
+      "male_synapse_count": 173708,
+      "present": true
+    },
+    {
+      "pre_role": "KC",
+      "post_role": "APL",
+      "positive_type_group_edges": 12,
+      "male_synapse_count": 210287,
+      "present": true
+    },
+    {
+      "pre_role": "APL",
+      "post_role": "KC",
+      "positive_type_group_edges": 12,
+      "male_synapse_count": 196098,
+      "present": true
+    }
+  ],
+  "selected_positive_type_group_edges": 2592,
+  "sources": [
+    {
+      "path": "/Users/avalok/.cache/qtail_pain_fly/malecns_v1/body_annotations.feather",
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2",
+      "verified_sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    {
+      "path": "/Users/avalok/.cache/qtail_pain_fly/malecns_v1/type_edges.feather",
+      "url": "https://raw.githubusercontent.com/flyconnectome/2025malecns/67767d2233657983993ff6c2be48e836a935863c/supplemental_data/mcns_fw_edge_comp.feather",
+      "bytes": 100367578,
+      "sha256": "1cac309c7760d16f5f041a7b924efbf5cdfa3a46570090fb234c2323ed9e313c",
+      "verified_sha256": "1cac309c7760d16f5f041a7b924efbf5cdfa3a46570090fb234c2323ed9e313c"
+    }
+  ],
+  "supplement_repository_commit": "67767d2233657983993ff6c2be48e836a935863c",
+  "artifacts": {
+    "circuit_edges": {
+      "path": "/Users/avalok/work/Q-TAIL-MVP/results/qtail_fly_memory_design/male_cns_memory_type_edges.csv",
+      "sha256": "6c26335fd42492256821a8b9202aec089f56fab0c5c80ea536dc7c4db5261dfc"
+    },
+    "candidate_cells": {
+      "path": "/Users/avalok/work/Q-TAIL-MVP/results/qtail_fly_memory_design/male_cns_memory_cells.csv",
+      "sha256": "c680cd95d2bdf1088242641f0d6421fc11273868622bed72a0258c9e9763b0a9"
+    }
+  },
+  "claim_boundary": [
+    "The anatomy is real; no behavioral or learning simulation was run by this audit.",
+    "The edge export is aggregated by cross-matched central-brain type groups, not individual neurons.",
+    "VNC edges are excluded from this export; this is not a simulation of all 166,700 neurons.",
+    "PPL1/PAM labels identify candidates, not proof of nociceptive function for every selected cell.",
+    "Synapse count is not functional synaptic strength, sign, delay, receptor identity or plasticity.",
+    "This audit does not establish single-event learning, permanent memory, or superiority to reinforcement learning."
+  ],
+  "anatomical_feasibility_passed": true
+}

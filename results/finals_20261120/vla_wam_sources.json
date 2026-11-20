@@ -1,0 +1,27 @@
+[
+  {
+    "source": "/Users/avalok/work/VAL+WAM/README.md",
+    "snapshot": "results/finals_20261120/vla_wam/README.md",
+    "sha256": "b8e34d5b81703aa1782b39b46ec882c8b55d65571f33f7f84611533fc7660a14"
+  },
+  {
+    "source": "/Users/avalok/work/VAL+WAM/docs/HAND_IMPROVEMENT.md",
+    "snapshot": "results/finals_20261120/vla_wam/docs/HAND_IMPROVEMENT.md",
+    "sha256": "9320c2fac1858e1de97397f0775ba7ebeeabfefe87e734d12c1048e61ecbe168"
+  },
+  {
+    "source": "/Users/avalok/work/VAL+WAM/logs/hand_improve_3seed.json",
+    "snapshot": "results/finals_20261120/vla_wam/logs/hand_improve_3seed.json",
+    "sha256": "0a7d76f971fcccd0ab9a78dbd75657870764148a7fd32310180ef5994b6ecba9"
+  },
+  {
+    "source": "/Users/avalok/work/VAL+WAM/logs/shadow_width_3seed.json",
+    "snapshot": "results/finals_20261120/vla_wam/logs/shadow_width_3seed.json",
+    "sha256": "e725c5a03ed86813c5fe1fab8d60dc761f5ff4dc0c8144fe8363977b77449a97"
+  },
+  {
+    "source": "/Users/avalok/work/VAL+WAM/logs/hand_dropout_3seed.json",
+    "snapshot": "results/finals_20261120/vla_wam/logs/hand_dropout_3seed.json",
+    "sha256": "941eeac530fdd61b6a4659392377e2210e9a5f4f988105f993e24919f86a64d9"
+  }
+]

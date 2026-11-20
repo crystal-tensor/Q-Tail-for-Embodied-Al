@@ -1,0 +1,107 @@
+{
+  "shadow": {
+    "baseline": {
+      "seeds": {
+        "0": {
+          "path": "models/hand_policy/shadow_bc_v2.pt",
+          "success_rate": 0.25555555555555554
+        },
+        "1": {
+          "path": "models/hand_policy/shadow_base_s1.pt",
+          "success_rate": 0.4222222222222222
+        },
+        "2": {
+          "path": "models/hand_policy/shadow_base_s2.pt",
+          "success_rate": 0.32222222222222224
+        }
+      },
+      "mean": 0.3333333333333333,
+      "minmax": [
+        0.25555555555555554,
+        0.4222222222222222
+      ],
+      "pooled_wilson95": [
+        0.2797883166660654,
+        0.39155453263075435
+      ]
+    },
+    "dropout": {
+      "seeds": {
+        "0": {
+          "path": "models/hand_policy/shadow_dropout_s0.pt",
+          "success_rate": 0.2222222222222222
+        },
+        "1": {
+          "path": "models/hand_policy/shadow_dropout_s1.pt",
+          "success_rate": 0.4
+        },
+        "2": {
+          "path": "models/hand_policy/shadow_dropout_s2.pt",
+          "success_rate": 0.35555555555555557
+        }
+      },
+      "mean": 0.32592592592592595,
+      "minmax": [
+        0.2222222222222222,
+        0.4
+      ],
+      "pooled_wilson95": [
+        0.27279806332136874,
+        0.38393780149975415
+      ]
+    }
+  },
+  "three": {
+    "baseline": {
+      "seeds": {
+        "0": {
+          "path": "models/hand_policy/three_bc_v2.pt",
+          "success_rate": 0.4777777777777778
+        },
+        "1": {
+          "path": "models/hand_policy/three_base_s1.pt",
+          "success_rate": 0.4222222222222222
+        },
+        "2": {
+          "path": "models/hand_policy/three_base_s2.pt",
+          "success_rate": 0.5444444444444444
+        }
+      },
+      "mean": 0.48148148148148145,
+      "minmax": [
+        0.4222222222222222,
+        0.5444444444444444
+      ],
+      "pooled_wilson95": [
+        0.4225602456317008,
+        0.5409222931790569
+      ]
+    },
+    "dropout": {
+      "seeds": {
+        "0": {
+          "path": "models/hand_policy/three_dropout_s0.pt",
+          "success_rate": 0.43333333333333335
+        },
+        "1": {
+          "path": "models/hand_policy/three_dropout_s1.pt",
+          "success_rate": 0.45555555555555555
+        },
+        "2": {
+          "path": "models/hand_policy/three_dropout_s2.pt",
+          "success_rate": 0.5222222222222223
+        }
+      },
+      "mean": 0.4703703703703703,
+      "minmax": [
+        0.43333333333333335,
+        0.5222222222222223
+      ],
+      "pooled_wilson95": [
+        0.41166755784042425,
+        0.5299045042567881
+      ]
+    }
+  },
+  "caveat": "fresh seeds 9500..9529; 30/task; 3 BC seeds; pooled Wilson ignores seed clustering; fixed reach"
+}

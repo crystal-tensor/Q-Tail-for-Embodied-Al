@@ -1,0 +1,34 @@
+{
+  "status": "partial_browser_transport",
+  "requested_pairs": 10,
+  "downloaded_pairs": 0,
+  "verified_pairs": 0,
+  "verified_files": 2,
+  "total_planned_bytes": 654006369,
+  "files": [
+    {
+      "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/annotation.json",
+      "bytes": 537,
+      "sha256": "12ce29a1ee1bee7ee7ba6a22c2dbf4ec06276dbbccbbd657f3dd2be392313c63",
+      "verified": true,
+      "checks": [
+        "source_size",
+        "json_parse"
+      ],
+      "transport": "authorized Chrome UI save/download"
+    },
+    {
+      "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/bad_frame_ratio.json",
+      "bytes": 57,
+      "sha256": "a606dbdeff7a83f3c7884fba54a6a411cd13a4ebe709feaef2c95befcefb7b5e",
+      "verified": true,
+      "checks": [
+        "source_size",
+        "json_parse"
+      ],
+      "transport": "authorized Chrome UI save/download"
+    }
+  ],
+  "browser_access_status": "Access granted after authorized Get access submission; bulk browser API repeatedly timed out",
+  "claim_boundary": "Only metadata files saved; no complete recordings or EgoSuite policy-effect experiment"
+}

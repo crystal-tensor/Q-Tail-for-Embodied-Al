@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "seeds": {
+      "0": {
+        "path": "models/hand_policy/shadow_bc_v2.pt",
+        "success_rate": 0.25555555555555554
+      },
+      "1": {
+        "path": "models/hand_policy/shadow_base_s1.pt",
+        "success_rate": 0.4222222222222222
+      },
+      "2": {
+        "path": "models/hand_policy/shadow_base_s2.pt",
+        "success_rate": 0.32222222222222224
+      }
+    },
+    "mean": 0.3333333333333333,
+    "minmax": [
+      0.25555555555555554,
+      0.4222222222222222
+    ],
+    "wilson": [
+      0.2797883166660654,
+      0.39155453263075435
+    ]
+  },
+  "width256": {
+    "seeds": {
+      "0": {
+        "path": "models/hand_policy/shadow_width256_s0.pt",
+        "success_rate": 0.35555555555555557
+      },
+      "1": {
+        "path": "models/hand_policy/shadow_width256_s1.pt",
+        "success_rate": 0.4444444444444444
+      },
+      "2": {
+        "path": "models/hand_policy/shadow_width256_s2.pt",
+        "success_rate": 0.4
+      }
+    },
+    "mean": 0.4000000000000001,
+    "minmax": [
+      0.35555555555555557,
+      0.4444444444444444
+    ],
+    "wilson": [
+      0.34336132228628224,
+      0.4594443872918097
+    ]
+  },
+  "caveat": "30/task, 3 BC seeds, fresh 9500, fixed reach, obs noise sigma=0.03"
+}

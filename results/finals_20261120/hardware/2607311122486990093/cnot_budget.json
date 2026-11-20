@@ -1,0 +1,14 @@
+{
+  "gate_counts_openqasm": {
+    "cx": 7,
+    "rxx": 0,
+    "ryy": 0
+  },
+  "logical_equivalent_cnot": 7,
+  "routing_factor": 3.0,
+  "routed_cnot_upper_estimate": 21,
+  "hardware_cnot_limit": 200,
+  "headroom_estimate": 179,
+  "within_budget": true,
+  "assumption": "每个 RXX/RYY 按 2 个 CNOT 分解，并乘路由放大系数。"
+}

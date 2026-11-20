@@ -1,0 +1,27 @@
+{
+  "platform": "Quafu",
+  "console_url": "https://quafu-sqc.baqis.ac.cn/framework/tasks",
+  "transport": "browser",
+  "backend": "Dongling",
+  "shots": 2048,
+  "task_name": "qtail_qaoa_schedule_p1_c1_20260730_183001",
+  "task_id": "2607301830017087376",
+  "status": "Finished",
+  "submitted_at": "2026-07-30T10:30:01.342692+00:00",
+  "circuit_sha256": "a5ad92e1d08e28cf4d7c56106397eeea06bb42ecd7dce338a336091142c952f1",
+  "cnot_budget": {
+    "gate_counts_openqasm": {
+      "cx": 8,
+      "rxx": 7,
+      "ryy": 7
+    },
+    "logical_equivalent_cnot": 36,
+    "routing_factor": 3.0,
+    "routed_cnot_upper_estimate": 108,
+    "hardware_cnot_limit": 200,
+    "headroom_estimate": 92,
+    "within_budget": true,
+    "assumption": "每个 RXX/RYY 按 2 个 CNOT 分解，并乘路由放大系数。"
+  },
+  "finished_at": "2026-07-30T10:30:07.901880+00:00"
+}

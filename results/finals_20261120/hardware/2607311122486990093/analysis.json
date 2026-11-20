@@ -1,0 +1,124 @@
+{
+  "shots": 2048,
+  "metrics": {
+    "js_to_target_bits": 0.22722445003108477,
+    "js_independent_to_target_bits": 0.29273005660574103,
+    "adjacent_correlation_mae": 0.16525817298099524,
+    "mean_abs_adjacent_correlation": 0.1898477149384214,
+    "target_mean_abs_adjacent_correlation": 0.35037138109833904,
+    "correlated_tail_mass": 0.58447265625,
+    "target_correlated_tail_mass": 0.7048207364341084,
+    "independent_correlated_tail_mass": 0.4524836428595233,
+    "marginal_mae": 0.0748593825702519,
+    "action_statistics": {
+      "mean": [
+        -0.021468749999999984,
+        -0.012861328124999996,
+        -0.0011406249999999993,
+        -0.006804687500000005
+      ],
+      "covariance": [
+        [
+          0.0003066240234374997,
+          2.9004455566406263e-05,
+          -3.2065429687499995e-06,
+          -6.7287597656249895e-06
+        ],
+        [
+          2.9004455566406256e-05,
+          0.0004652424888610837,
+          5.501922607421895e-06,
+          2.018580627441407e-05
+        ],
+        [
+          -3.206542968749999e-06,
+          5.501922607421889e-06,
+          0.00023951147460937484,
+          -4.848034667968749e-05
+        ],
+        [
+          -6.728759765624997e-06,
+          2.018580627441406e-05,
+          -4.848034667968749e-05,
+          0.0008374462280273442
+        ]
+      ],
+      "mean_l2_norm": 0.04902650322719393,
+      "max_l2_norm": 0.061644140029689765
+    }
+  },
+  "top_states_q0_left": [
+    {
+      "bitstring": "00000010",
+      "count": 167,
+      "probability": 0.08154296875,
+      "target_probability": 0.10710392441860465
+    },
+    {
+      "bitstring": "00001100",
+      "count": 157,
+      "probability": 0.07666015625,
+      "target_probability": 0.07197795542635659
+    },
+    {
+      "bitstring": "00001010",
+      "count": 112,
+      "probability": 0.0546875,
+      "target_probability": 0.07040334302325581
+    },
+    {
+      "bitstring": "00000000",
+      "count": 111,
+      "probability": 0.05419921875,
+      "target_probability": 0.06107679263565891
+    },
+    {
+      "bitstring": "00001000",
+      "count": 74,
+      "probability": 0.0361328125,
+      "target_probability": 0.034792877906976744
+    },
+    {
+      "bitstring": "00001110",
+      "count": 63,
+      "probability": 0.03076171875,
+      "target_probability": 0.03733648255813953
+    },
+    {
+      "bitstring": "00000011",
+      "count": 56,
+      "probability": 0.02734375,
+      "target_probability": 0.07803415697674419
+    },
+    {
+      "bitstring": "00001011",
+      "count": 48,
+      "probability": 0.0234375,
+      "target_probability": 0.04811652131782946
+    },
+    {
+      "bitstring": "00011010",
+      "count": 39,
+      "probability": 0.01904296875,
+      "target_probability": 0.00015140503875968992
+    },
+    {
+      "bitstring": "00011000",
+      "count": 36,
+      "probability": 0.017578125,
+      "target_probability": 0.00015140503875968992
+    },
+    {
+      "bitstring": "00111010",
+      "count": 35,
+      "probability": 0.01708984375,
+      "target_probability": 0.04436167635658915
+    },
+    {
+      "bitstring": "00000100",
+      "count": 35,
+      "probability": 0.01708984375,
+      "target_probability": 0.00027252906976744186
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "seeds": {
+      "0": {
+        "path": "models/hand_policy/allegro_bc_v5.pt",
+        "success_rate": 0.23333333333333334
+      },
+      "1": {
+        "path": "models/hand_policy/allegro_safe_s1.pt",
+        "success_rate": 0.37777777777777777
+      },
+      "2": {
+        "path": "models/hand_policy/allegro_safe_s2.pt",
+        "success_rate": 0.5333333333333333
+      }
+    },
+    "mean": 0.3814814814814815,
+    "minmax": [
+      0.23333333333333334,
+      0.5333333333333333
+    ],
+    "pooled_wilson95": [
+      0.3255867840696234,
+      0.4407014643192262
+    ]
+  },
+  "dropout": {
+    "seeds": {
+      "0": {
+        "path": "models/hand_policy/hand_candidate_a3b7610fff0f.pt",
+        "success_rate": 0.5
+      },
+      "1": {
+        "path": "models/hand_policy/dropout_s1.pt",
+        "success_rate": 0.4444444444444444
+      },
+      "2": {
+        "path": "models/hand_policy/dropout_s2.pt",
+        "success_rate": 0.4444444444444444
+      }
+    },
+    "mean": 0.46296296296296297,
+    "minmax": [
+      0.4444444444444444,
+      0.5
+    ],
+    "pooled_wilson95": [
+      0.40442186338490344,
+      0.5225432142366121
+    ]
+  },
+  "caveat": "fresh seeds 9500..9529; 3 BC seeds; 30/task; pooled Wilson ignores seed clustering; fixed reach"
+}

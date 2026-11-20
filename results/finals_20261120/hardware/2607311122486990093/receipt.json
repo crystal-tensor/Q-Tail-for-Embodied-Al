@@ -1,0 +1,27 @@
+{
+  "platform": "Quafu",
+  "console_url": "https://quafu-sqc.baqis.ac.cn/framework/tasks",
+  "transport": "browser",
+  "backend": "Dongling",
+  "shots": 2048,
+  "task_name": "qtail_pqc_born_noise_p2_20260731_112246",
+  "task_id": "2607311122486990093",
+  "status": "Finished",
+  "submitted_at": "2026-07-31T03:22:46.419579+00:00",
+  "circuit_sha256": "d03cd1ebdca4fbf7fbc413f118cf5c68edad58662d4bdd3cdd0a9cf9f39511d8",
+  "cnot_budget": {
+    "gate_counts_openqasm": {
+      "cx": 7,
+      "rxx": 0,
+      "ryy": 0
+    },
+    "logical_equivalent_cnot": 7,
+    "routing_factor": 3.0,
+    "routed_cnot_upper_estimate": 21,
+    "hardware_cnot_limit": 200,
+    "headroom_estimate": 179,
+    "within_budget": true,
+    "assumption": "每个 RXX/RYY 按 2 个 CNOT 分解，并乘路由放大系数。"
+  },
+  "finished_at": "2026-07-31T03:22:54.187889+00:00"
+}

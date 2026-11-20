@@ -1,0 +1,428 @@
+{
+  "repo": "LightwheelAI/EgoDemo",
+  "revision": "407b960db2fe1c91b75854848d49c5cf920f68b9",
+  "selection": "alphabetical first 10 task directories; first scene per task; complete LeRobot recording including both videos",
+  "target_task_scene_pairs": 10,
+  "selected": [
+    {
+      "task": "Adjust Seal Sticker",
+      "scene": "0ec86920-cfc1-4865-b3f3-9152f5560226",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/annotation.json",
+          "bytes": 537
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/data/chunk-000/file-000.parquet",
+          "bytes": 1801164
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59810
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/meta/stats.json",
+          "bytes": 59144
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/meta/tasks.parquet",
+          "bytes": 2078
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 29674988
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Seal Sticker/0ec86920-cfc1-4865-b3f3-9152f5560226/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 32019135
+        }
+      ]
+    },
+    {
+      "task": "Adjust Shelf Labels",
+      "scene": "027b5938-60ae-41a7-9948-b4dd13606658",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/annotation.json",
+          "bytes": 871
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/data/chunk-000/file-000.parquet",
+          "bytes": 745318
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59713
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/meta/stats.json",
+          "bytes": 58924
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/meta/tasks.parquet",
+          "bytes": 2078
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 14527036
+        },
+        {
+          "path": "EgoStand/lerobot/Adjust Shelf Labels/027b5938-60ae-41a7-9948-b4dd13606658/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 16235385
+        }
+      ]
+    },
+    {
+      "task": "Affix Drawer Label",
+      "scene": "246271ee-21c1-4ae1-914f-aaf97d91dacc",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/annotation.json",
+          "bytes": 1166
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/bad_frame_ratio.json",
+          "bytes": 58
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/data/chunk-000/file-000.parquet",
+          "bytes": 2823233
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59685
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/meta/info.json",
+          "bytes": 8819
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/meta/stats.json",
+          "bytes": 59273
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/meta/tasks.parquet",
+          "bytes": 2073
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 37193087
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Drawer Label/246271ee-21c1-4ae1-914f-aaf97d91dacc/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 36942359
+        }
+      ]
+    },
+    {
+      "task": "Affix Label to Courier Parcel",
+      "scene": "27cdb87c-fcae-4457-ae90-8da27e9d6fc1",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/annotation.json",
+          "bytes": 1292
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/bad_frame_ratio.json",
+          "bytes": 1605
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/data/chunk-000/file-000.parquet",
+          "bytes": 4890980
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59776
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/meta/info.json",
+          "bytes": 8819
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/meta/stats.json",
+          "bytes": 59202
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/meta/tasks.parquet",
+          "bytes": 2128
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 78613612
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Label to Courier Parcel/27cdb87c-fcae-4457-ae90-8da27e9d6fc1/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 78671958
+        }
+      ]
+    },
+    {
+      "task": "Affix Shipping Label (on Package Surface)",
+      "scene": "09f455e8-cabd-4895-9fa9-bf062669dfa4",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/annotation.json",
+          "bytes": 644
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/data/chunk-000/file-000.parquet",
+          "bytes": 1080396
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59911
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/meta/stats.json",
+          "bytes": 59140
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/meta/tasks.parquet",
+          "bytes": 2188
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 20449699
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label (on Package Surface)/09f455e8-cabd-4895-9fa9-bf062669dfa4/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 23689212
+        }
+      ]
+    },
+    {
+      "task": "Affix Shipping Label to Package",
+      "scene": "7fb4db68-620a-4695-b04c-41ae5d1463b7",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/annotation.json",
+          "bytes": 964
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/bad_frame_ratio.json",
+          "bytes": 58
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/data/chunk-000/file-000.parquet",
+          "bytes": 2789253
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59741
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/meta/info.json",
+          "bytes": 8819
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/meta/stats.json",
+          "bytes": 58978
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/meta/tasks.parquet",
+          "bytes": 2138
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 69347365
+        },
+        {
+          "path": "EgoStand/lerobot/Affix Shipping Label to Package/7fb4db68-620a-4695-b04c-41ae5d1463b7/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 71332095
+        }
+      ]
+    },
+    {
+      "task": "Align Drinking Cups",
+      "scene": "b221275f-6b4e-4943-be4b-e713dc153a4e",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/annotation.json",
+          "bytes": 877
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/data/chunk-000/file-000.parquet",
+          "bytes": 1433999
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59779
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/meta/stats.json",
+          "bytes": 59275
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/meta/tasks.parquet",
+          "bytes": 2078
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 23719398
+        },
+        {
+          "path": "EgoStand/lerobot/Align Drinking Cups/b221275f-6b4e-4943-be4b-e713dc153a4e/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 23919260
+        }
+      ]
+    },
+    {
+      "task": "Align Mixed Merchandise to Shelf Front Edge",
+      "scene": "f615c5c8-5a1d-4075-91b2-1082efe17de9",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/annotation.json",
+          "bytes": 899
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/data/chunk-000/file-000.parquet",
+          "bytes": 438351
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59788
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/meta/stats.json",
+          "bytes": 58974
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/meta/tasks.parquet",
+          "bytes": 2198
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 10754871
+        },
+        {
+          "path": "EgoStand/lerobot/Align Mixed Merchandise to Shelf Front Edge/f615c5c8-5a1d-4075-91b2-1082efe17de9/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 11805577
+        }
+      ]
+    },
+    {
+      "task": "Align Snack Bags to Shelf Front Edge",
+      "scene": "b71b0c3b-cb37-454f-b530-63f8daf35392",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/annotation.json",
+          "bytes": 474
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/data/chunk-000/file-000.parquet",
+          "bytes": 457736
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59804
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/meta/stats.json",
+          "bytes": 59113
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/meta/tasks.parquet",
+          "bytes": 2163
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 12216683
+        },
+        {
+          "path": "EgoStand/lerobot/Align Snack Bags to Shelf Front Edge/b71b0c3b-cb37-454f-b530-63f8daf35392/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 12713279
+        }
+      ]
+    },
+    {
+      "task": "Align Wet Wipe Stacks",
+      "scene": "a4f2e029-9b41-44be-b5d1-9848c596fef6",
+      "files": [
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/annotation.json",
+          "bytes": 677
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/bad_frame_ratio.json",
+          "bytes": 57
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/data/chunk-000/file-000.parquet",
+          "bytes": 748737
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/meta/episodes/chunk-000/file-000.parquet",
+          "bytes": 59743
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/meta/info.json",
+          "bytes": 8818
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/meta/stats.json",
+          "bytes": 59340
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/meta/tasks.parquet",
+          "bytes": 2088
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/videos/observation.images.head_left/chunk-000/file-000.mp4",
+          "bytes": 14869291
+        },
+        {
+          "path": "EgoStand/lerobot/Align Wet Wipe Stacks/a4f2e029-9b41-44be-b5d1-9848c596fef6/videos/observation.images.head_right/chunk-000/file-000.mp4",
+          "bytes": 16793885
+        }
+      ]
+    }
+  ]
+}
