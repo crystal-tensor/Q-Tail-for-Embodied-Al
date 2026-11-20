@@ -2,12 +2,14 @@
 
 ## 决赛更新 · 2026-11-20
 
+[项目统一入口：产品架构、50任务对照与Baihua真机](http://8.153.83.178:6222/qtail-embodied.html)
+
 已验证EgoDemo 50任务/42场景的完整状态轨迹；完成63万合成观测窗口与24次同预算训练。新Baihua5q三次各2048shots、54个活跃物理比特一次4096shots均Finished。10mm噪声下，5q分配加增强使当前预测模型误差降低5.09%；未建立量子优势或机器人成功率增益。
 
 [查看逐任务结果、原始计数、存储估算和局限](docs/finals_50tasks_20261120.md)。本次约1.50小时状态先导，不是完整10万小时训练。
 
 
-[Finals evidence](docs/finals_20261120.md): six archived QUAFU runs verified; **10 task/scene left-head videos downloaded and fully decoded** (311.37 MB, 5.19 min). [Validation and local hashes](results/finals_20261120/verification_report.json). This is a representative subset, not the complete 100,000-hour collection or full multimodal recordings. Pain-memory and VLA/WAM integration gains remain unmeasured.
+[Finals evidence](docs/finals_20261120.md): six archived QUAFU runs verified; **initial 10 task/scene left-head videos downloaded and fully decoded** (311.37 MB, 5.19 min). [Validation and local hashes](results/finals_20261120/verification_report.json). This is a representative subset, not the complete 100,000-hour collection or full multimodal recordings. Pain-memory and VLA/WAM integration gains remain unmeasured.
 
 # Q-Tail-for-AI
 

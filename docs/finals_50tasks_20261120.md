@@ -1,6 +1,6 @@
 # 决赛进展：EgoDemo 50任务与Baihua真机
 
-2026-11-20。此页记录新运行结果，源数据不是完整10万小时。
+2026-11-20。[项目统一页面](http://8.153.83.178:6222/qtail-embodied.html)融合原站架构与当前证据，沿用深色青紫视觉。决赛PPT由本机私下交付，不在公开站点或当前仓库文件中提供下载。此页记录新运行结果，源数据不是完整10万小时。
 
 ## 数据、合成与比较
 
@@ -54,10 +54,11 @@
 
 ## 复现
 
-Python环境需要numpy、scipy、torch、pyarrow、pandas、matplotlib；真机接口使用pyquafu和quark。需要本人获得EgoDemo访问权，数据由许可渠道获取。公开仓库只含方法、元数据、计数与指标，不重新分发受限源轨迹、训练库或凭据。
+Python环境需要numpy、scipy、torch、pyarrow、pandas、matplotlib；真机接口使用pyquafu和quark。需要本人获得EgoDemo访问权，数据由许可渠道获取。下载器现默认获取50条完整episode的全部450文件；`--state-only`才是只取状态的显式选项。双目视频、标注和全部LeRobot元数据在同一固定revision下下载，按源内容散列校验，并提供视频全帧解码检查。公开仓库只含方法、元数据、计数与指标，不重新分发受限源轨迹、训练库或凭据。
 
 ```bash
 python3 tools/qtail_egosuite_pose50_download.py --root /Volumes/ORICO/qtail_full_data_10w
+python3 tools/qtail_verify_full50.py --root /Volumes/ORICO/qtail_full_data_10w
 python3 tools/qtail_collect_egosuite_pose50.py --root /Volumes/ORICO/qtail_full_data_10w
 python3 tools/qtail_baihua_archive_analyze.py
 python3 tools/qtail_pose50_ablation.py --root /Volumes/ORICO/qtail_full_data_10w --arms original_only,natural_aug,uniform_aug,classical_risk_aug,ideal_rcs_aug,ideal_archive_aug,baihua_archive_aug,baihua_rcs_aug

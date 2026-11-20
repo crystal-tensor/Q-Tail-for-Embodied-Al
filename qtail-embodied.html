@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-TAIL | 量子驱动的具身智能长尾数据引擎</title>
+<link rel="canonical" href="http://8.153.83.178:6222/qtail-embodied.html">
+<meta name="description" content="Q-TAIL：量子采样驱动的具身长尾数据引擎，50任务先导评测与Baihua 54比特真机记录。">
+
+    <!-- Tailwind CSS -->
+    <script src="docs/assets/qtail-site/vendor/tailwind.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        qbg: '#0A0A0F',
+                        qpanel: 'rgba(20, 20, 28, 0.6)',
+                        qpanelHover: 'rgba(30, 30, 42, 0.8)',
+                        qcyan: '#45F3FF',
+                        qpurple: '#8B5CF6',
+                        qblue: '#3B82F6',
+                        qborder: 'rgba(255, 255, 255, 0.08)',
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, rgba(10, 10, 15, 0) 50%)',
+                        'cyan-glow': 'radial-gradient(circle at 50% 50%, rgba(69, 243, 255, 0.1) 0%, rgba(10, 10, 15, 0) 50%)',
+                        'grid-pattern': 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'Menlo', 'monospace'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #0A0A0F;
+            color: #F8FAFC;
+            overflow-x: hidden;
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+        }
+        .glass-card {
+            background: rgba(20,20,28,.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #45F3FF 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(69, 243, 255, 0.3), rgba(139, 92, 246, 0.3));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0A0A0F; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+        /* Animation delays */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        section[id],h2[id]{scroll-margin-top:96px}
+        .latest-report{max-width:1200px;margin:auto;padding:70px 24px 80px;color:#cbd5e1;font-size:17px;line-height:1.85}
+        .latest-report h1{font-size:clamp(30px,4vw,46px);color:white;line-height:1.3;font-weight:750;letter-spacing:-.03em;margin:12px 0 20px}
+        .latest-report h2{font-size:clamp(25px,3vw,32px);font-weight:700;color:white;line-height:1.4;margin:65px 0 18px}
+        .latest-report .lead{font-size:21px;max-width:900px;color:#94a3b8}
+        .latest-report p{margin:16px 0}
+        .latest-report .data{font-size:clamp(22px,3vw,29px);line-height:1.5;font-weight:650;color:#45f3ff;margin:25px 0}
+        .latest-report .note{border:1px solid #8b5cf640;border-left:3px solid #8b5cf6;border-radius:0 12px 12px 0;padding:20px 24px;background:#8b5cf60c;color:#cbd5e1}
+        .latest-report .actions{display:flex;gap:15px;flex-wrap:wrap;margin:26px 0}
+        .latest-report a{color:#45f3ff;text-underline-offset:4px}
+        .latest-report a:hover{text-decoration:underline}
+        .latest-report .actions a{padding:10px 18px;border:1px solid #45f3ff50;border-radius:24px;font-size:15px;line-height:1.5}
+        .latest-report figure{padding:20px;margin:26px 0;background:#11111a;border:1px solid #ffffff10;border-radius:20px;overflow:hidden}
+        .latest-report img{display:block;width:100%;height:auto}
+        .latest-report figcaption{font-size:15px;line-height:1.8;margin-top:15px;color:#94a3b8}
+        .latest-report label{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin:10px 18px 15px 0;font-size:15px}
+        .latest-report select,.latest-report input{color:#f1f5f9;background:#15151f;border:1px solid #ffffff30;border-radius:9px;font:inherit;padding:10px 12px;max-width:100%;min-height:44px}
+        .latest-report select:focus-visible,.latest-report input:focus-visible{outline:2px solid #45f3ff;outline-offset:3px}
+        .latest-report input{width:200px}
+        .latest-report .scroll{overflow:auto;border:1px solid #ffffff15;border-radius:14px;max-height:620px}
+        .latest-report table{width:100%;border-collapse:collapse;font-size:15px;white-space:nowrap}
+        .latest-report th,.latest-report td{text-align:left;padding:14px 16px;border-bottom:1px solid #ffffff10}
+        .latest-report th{background:#1a1928;color:#e2e8f0;font-weight:600;position:sticky;top:0}
+        .latest-report tr:nth-child(even){background:#ffffff03}
+        .latest-report .positive{color:#5ee0bd}.latest-report .negative{color:#fda4af}
+        .latest-report details{border:1px solid #ffffff15;border-radius:14px;margin-top:22px;padding:18px 22px}
+        .latest-report summary{cursor:pointer;color:#c4b5fd}
+        .latest-report .report-footnote{font-size:14px;color:#94a3b8;margin-top:40px}
+        .latest-report #count{font-size:14px;color:#94a3b8}
+        @media(max-width:700px){.latest-report{padding:50px 18px}.latest-report figure{padding:10px}.latest-report label{display:flex}.latest-report .actions a{width:100%;text-align:center}.latest-report .note{padding:16px}.latest-report td,.latest-report th{padding:12px}}
+        @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+    </style>
+
+    <!-- React & Babel -->
+    <script src="docs/assets/qtail-site/vendor/react.min.js" crossorigin></script>
+    <script src="docs/assets/qtail-site/vendor/react-dom.min.js" crossorigin></script>
+
+    <!-- Lucide Icons -->
+</head>
+<body class="antialiased selection:bg-qpurple/30 selection:text-qcyan">
+    <div id="root"></div>
+
+    <script src="docs/assets/qtail-site/app.js?v=45185c87a314"></script></body></html>
